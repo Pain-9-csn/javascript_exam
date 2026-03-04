@@ -1,0 +1,33 @@
+:root{
+    /** Olive Garden Feast **/
+    --olive-leaf: #606c38ff;
+    --black-forest: #283618ff;
+    --cornsilk: #fefae0ff;
+    --sunlit-clay: #dda15eff;
+    --copperwood: #bc6c25ff;
+    /** Soft Sand **/
+    --parchment: #edede9ff;
+    --dust-grey: #d6ccc2ff;
+    --linen: #f5ebe0ff;
+    --powder-petal: #e3d5caff;
+    --almond-silk: #d5bdafff;
+
+    /** Deep sea blue **/
+    --smart-blue: #0466c8ff;
+    --sapphire: #0353a4ff;
+    --regal-navy: #023e7dff;
+    --prussian-blue: #002855ff;
+    --prussian-blue-2: #001845ff;
+    --prussian-blue-3: #001233ff;
+    --twilight-indigo: #33415cff;
+    --blue-slate: #5c677dff;
+    --slate-grey: #7d8597ff;
+    --lavender-grey: #979dacff;
+
+      /** Golden summer fields **/
+    --tea-green: #ccd5aeff;
+    --beige: #e9edc9ff;
+    --cornsilk: #fefae0ff;
+    --papaya-whip: #faedcdff;
+    --light-bronze: #d4a373ff;
+}
