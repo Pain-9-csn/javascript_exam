@@ -1,0 +1,293 @@
+
+:root {
+    --olive: #606c38;
+    --black-forest: #283618;
+    --cv1: #023e7d;
+    --cv1p: #33415c;
+    --cv2: #5c677d;
+    --main-color: #F8F9FA;
+    --second-color: #003366;
+    --third-color: #2C2C2C;
+    --fourth-color: #A7C7E7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f0f0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.droite1 p, .droite2 p, .droite3 p,
+.droite4 p, .droite5 p, .droite6 p,
+.droite7 p {
+    font-size: 14px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.gauche3 .container {
+    padding-top: 25px;
+    padding-left: 15px;
+    display: flex;
+}
+
+.gauche3 .form-container {
+    display: flex;
+    height: 100vh;
+    flex: 1;
+}
+
+.gauche3 .right2 {
+    width: 100%;
+    background: var(--main-color);
+    border-right: 1px solid var(--fourth-color);
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.gauche3 .form-content {
+    padding: 28px 24px;
+}
+
+.gauche3 h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--second-color);
+    margin-bottom: 16px;
+    margin-top: 4px;
+}
+
+.gauche3 hr {
+    border: none;
+    border-top: 1px solid var(--fourth-color);
+    margin: 20px 0;
+}
+.gauche3 .field textarea {
+    width: 100%;
+    resize: none;
+    overflow-y: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+.gauche3 .field {
+    margin-bottom: 14px;
+    padding: 10px 5px;
+}
+
+.gauche3 .field label {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--third-color);
+    margin-bottom: 8px;
+}
+
+.gauche3 .field input,
+.gauche3 .field textarea,
+.gauche3 .field select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--fourth-color);
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: inherit;
+    color: var(--third-color);
+    background-color: #fff;
+    transition: border 0.2s;
+}
+
+.gauche3 .info {
+    display: flex;
+}
+
+.gauche3 .pres {
+    width: 75%;
+}
+
+.gauche3 .poste input,
+.gauche3 .nom input {
+    width: 100%;
+}
+
+.gauche3 .field input:focus,
+.gauche3 .field textarea:focus {
+    outline: none;
+    border-color: var(--second-color);
+    background: #fff;
+}
+
+.gauche3 .field-row {
+    display: flex;
+    gap: 12px;
+}
+
+.gauche3 .field-row .field {
+    flex: 1;
+}
+
+.gauche3 .pres {
+    flex: 2;
+}
+
+.gauche3 .image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gauche3 .photo-container {
+    width: 200px;
+    height: 190px;
+    border-radius: 50%;
+    border: 2px dashed var(--fourth-color);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gauche3 .photo-container input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+}
+
+.gauche3 .photo-container img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.gauche3 #photo-placeholder {
+    position: absolute;
+    font-size: 60px;
+    color: var(--fourth-color);
+    pointer-events: none;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gauche3 .exp-bloc,
+.gauche3 .edu-bloc,
+.gauche3 .langue-bloc,
+.gauche3 .comp-bloc {
+    position: relative;
+    border: 1px solid var(--fourth-color);
+    border-radius: 8px;
+    padding: 14px 14px 14px 14px;
+    margin-bottom: 12px;
+    background: #fff;
+}
+
+.gauche3 .btn-suppr {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #dc2626;
+    border: 1.5px solid #dc2626;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 0;
+    transition: all 0.2s;
+}
+
+.gauche3 .btn-suppr:hover {
+    background-color: #dc2626;
+    color: #fff;
+}
+
+.gauche3 button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--second-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.gauche3 button:hover {
+    background-color: var(--third-color);
+}
+
+.gauche3 #btn-add-exp,
+.gauche3 #btn-add-edu,
+.gauche3 #btn-add-langue,
+.gauche3 #btn-add-comp {
+    width: auto;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    margin-left: auto;
+    margin-top: 6px;
+    background-color: #fff;
+    color: var(--second-color);
+    border: 1.5px solid var(--second-color);
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.gauche3 #btn-add-exp:hover,
+.gauche3 #btn-add-edu:hover,
+.gauche3 #btn-add-langue:hover,
+.gauche3 #btn-add-comp:hover {
+    background-color: var(--second-color);
+    color: #fff;
+}
+
+.gauche3 #btn-submit {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background: var(--second-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 32px;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+}
+
+.gauche3 #btn-submit:hover {
+    background: var(--third-color);
+}
+
+.template-container {
+    flex: 1;
+}
