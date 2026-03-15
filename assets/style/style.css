@@ -24,14 +24,7 @@ body {
     overflow: hidden;
     display: flex;
 }
-.droite1 p, .droite2 p, .droite3 p,
-.droite4 p, .droite5 p, .droite6 p,
-.droite7 p {
-    font-size: 14px;
-    line-height: 1.6;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
+
 .gauche3 .container {
     padding-top: 25px;
     padding-left: 15px;
