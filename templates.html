@@ -1,92 +1,221 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Templates</title>
+    <title>ProCV — Nos Templates</title>
     <link rel="icon" type="image/png" href="assets/images/PCV.png">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style/templates.css">
- </head>
- <body>
-     <!--Section menu-->
-    <div class="container-menu" id="acceuil">
-      <div class="first-menu">
-        <!--Logo-->
-        <div class="logo">
-        <a href="index.html"><img src="assets/images/PCV.png" alt=""></a>
-        </div>
-     <!--Menu-->
-        <div class="menu-links">
-        <ul>
-        <li>
-            <a href="index.html" id="accueil">Accueil</a>
-        </li>
-        <li>
-            <a href="#" id="templates">Templates</a>
-        </li>
+</head>
+<body>
 
-        <li>
-            <a href="assets/about.html" id="about">About</a>
-        </li>
-        </ul>
+    <nav class="navigation" id="navigation">
+        <div class="contenu-nav">
+            <a href="index.html" class="logo">
+                <img src="assets/images/PCV.png" alt="ProCV">
+                <span>ProCV</span>
+            </a>
+            <div class="liens-menu">
+                <a href="index.html" class="lien">Accueil</a>
+                <a href="templates.html" class="lien actif">Templates</a>
+                <a href="assets/about.html" class="lien">À propos</a>
+                <a href="assets/templates/template1.html" class="bouton-nav">Créer mon CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="en-tete">
+        <div class="fond-en-tete">
+            <div class="cercle cercle-1"></div>
+            <div class="cercle cercle-2"></div>
+        </div>
+        <div class="contenu-en-tete">
+            <div class="pastille">
+                <i class="fa-solid fa-layer-group"></i>
+                7 modèles disponibles
+            </div>
+            <h1>Modèles CV <em>gratuits</em></h1>
+            <p>Optez pour un modèle conçu pour mettre en valeur vos compétences, dans le style qui vous correspond. Un CV pensé pour vous.</p>
+        </div>
+    </section>
+
+    <section class="liste-modeles">
+        <div class="grille-modeles">
+
+            <a href="templates/template1.html" class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/photo1.jpeg" alt="Modèle Classic">
+                    <div class="survol-modele">
+                        <span class="bouton-utiliser">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Utiliser ce modèle
+                        </span>
+                    </div>
+                </div>
+                <div class="infos-modele">
+                    <div class="details-modele">
+                        <span class="nom-modele">Classic</span>
+                        <span class="tag-modele">Intemporel</span>
+                    </div>
+                    <p class="description-modele">Élégant et sobre, idéal pour tous les secteurs.</p>
+                </div>
+            </a>
+
+            <a href="templates/template4.html" class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/photo5.jpeg" alt="Modèle Moderne">
+                    <div class="survol-modele">
+                        <span class="bouton-utiliser">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Utiliser ce modèle
+                        </span>
+                    </div>
+                </div>
+                <div class="infos-modele">
+                    <div class="details-modele">
+                        <span class="nom-modele">Moderne</span>
+                        <span class="tag-modele">Tendance</span>
+                    </div>
+                    <p class="description-modele">Design actuel pour se démarquer auprès des recruteurs.</p>
+                </div>
+            </a>
+
+            <a href="templates/template2.html" class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/photo2.jpeg" alt="Modèle Bicolonne">
+                    <div class="survol-modele">
+                        <span class="bouton-utiliser">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Utiliser ce modèle
+                        </span>
+                    </div>
+                </div>
+                <div class="infos-modele">
+                    <div class="details-modele">
+                        <span class="nom-modele">Bicolonne</span>
+                        <span class="tag-modele">Structuré</span>
+                    </div>
+                    <p class="description-modele">Mise en page claire qui facilite la lecture rapide.</p>
+                </div>
+            </a>
+
+            <a href="templates/template6.html" class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/photo3.jpeg" alt="Modèle Naturel">
+                    <div class="survol-modele">
+                        <span class="bouton-utiliser">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Utiliser ce modèle
+                        </span>
+                    </div>
+                </div>
+                <div class="infos-modele">
+                    <div class="details-modele">
+                        <span class="nom-modele">Naturel</span>
+                        <span class="tag-modele">Créatif</span>
+                    </div>
+                    <p class="description-modele">Tons naturels pour les profils créatifs et originaux.</p>
+                </div>
+            </a>
+
+            <a href="templates/template7.html" class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/photo4.jpeg" alt="Modèle Executive">
+                    <div class="survol-modele">
+                        <span class="bouton-utiliser">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Utiliser ce modèle
+                        </span>
+                    </div>
+                </div>
+                <div class="infos-modele">
+                    <div class="details-modele">
+                        <span class="nom-modele">Executive</span>
+                        <span class="tag-modele">Corporate</span>
+                    </div>
+                    <p class="description-modele">Style prestige pour les postes à responsabilités.</p>
+                </div>
+            </a>
+
+            <a href="templates/template3.html" class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/photo7.png" alt="Modèle Épuré">
+                    <div class="survol-modele">
+                        <span class="bouton-utiliser">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Utiliser ce modèle
+                        </span>
+                    </div>
+                </div>
+                <div class="infos-modele">
+                    <div class="details-modele">
+                        <span class="nom-modele">Épuré</span>
+                        <span class="tag-modele">Minimaliste</span>
+                    </div>
+                    <p class="description-modele">Le moins c'est le mieux — pour les profils sobres.</p>
+                </div>
+            </a>
+
+            <a href="templates/template5.html" class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/photo6.jpeg" alt="Modèle Olive">
+                    <div class="survol-modele">
+                        <span class="bouton-utiliser">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Utiliser ce modèle
+                        </span>
+                    </div>
+                </div>
+                <div class="infos-modele">
+                    <div class="details-modele">
+                        <span class="nom-modele">Olive</span>
+                        <span class="tag-modele">Unique</span>
+                    </div>
+                    <p class="description-modele">Un design distinctif pour sortir du lot.</p>
+                </div>
+            </a>
 
         </div>
-     </div>
-     </div>
-        <!--Bannière-->
-    <div class="banner" id="accueil">
-        <div class="banniere"> 
-            <h3>Modèles CV gratuits</h3>
-            <p class="text">Optez pour un modèle de CV conçu pour mettre en valeur vos compétences, dans le style qui vous correspond. 
-            Un CV pensé pour vous : choisissez le design et le format qui traduisent votre personnalité professionnelle.</p>  
+    </section>
+
+    <footer class="pied-page">
+        <div class="contenu-pied">
+            <div class="marque">
+                <img src="assets/images/PCV.png" alt="ProCV" class="logo-pied">
+                <span class="nom-marque">ProCV</span>
+                <p>Créez votre CV professionnel gratuitement en quelques minutes.</p>
+            </div>
+            <div class="colonne-pied">
+                <h4>Navigation</h4>
+                <a href="index.html">Accueil</a>
+                <a href="templates.html">Templates</a>
+                <a href="assets/about.html">À propos</a>
+            </div>
+            <div class="colonne-pied">
+                <h4>Contact</h4>
+                <a href="mailto:ndiayemamediarra3170@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    ndiayemamediarra3170@gmail.com
+                </a>
+                <a href="mailto:cheikhsaliouniang01@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    cheikhsaliouniang01@gmail.com
+                </a>
+                <p><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</p>
+            </div>
         </div>
-    </div>  
-     <!--Partie templates-->
-     <div class="templates">
-        <a href="templates/template1.html">
-            <div class="template-card">     
-            <img src="assets/images/photo1.jpeg" alt="Modele CV 1">
-            <h5>Nom du modèle</h5>
+        <div class="bas-pied">
+            <p>© 2026 ProCV. Tous droits réservés.</p>
         </div>
-        </a>
-        <a href="templates/template4.html">
-             <div class="template-card">
-            <img src="assets/images/photo5.jpeg" alt="Modele CV 2">
-            <h5>Nom du modèle</h5>
-        </div>
-        </a>
-        <a href="templates/template2.html"> 
-            <div class="template-card">
-            <img src="assets/images/photo2.jpeg" alt="Modele CV 3">
-            <h5>Nom du modèle</h5>
-        </div>
-        </a>
-         <a href="templates/template6.html">
-             <div class="template-card">
-            <img src="assets/images/photo3.jpeg" alt="Modele CV 4">
-            <h5>Nom du modèle</h5>
-        </div>
-         </a>
-        <a href="templates/template7.html">
-            <div class="template-card">
-            <img src="assets/images/photo4.jpeg" alt="Modele CV 5">
-            <h5>Nom du modèle</h5>
-        </div>
-        </a>
-        <a href="templates/template3.html">
-            <div class="template-card">
-            <img src="assets/images/photo7.png" alt="Modele CV 6">
-            <h5>Nom du modèle</h5>
-        </div>
-        </a>
-        <a href="templates/template5.html">
-            <div class="template-card">
-            <img src="assets/images/photo6.jpeg" alt="Modele CV 6">
-            <h5>Nom du modèle</h5>
-        </div>
-        </a>
-        
-     </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.getElementById('navigation').classList.toggle('defilé', window.scrollY > 50);
+        });
+    </script>
 </body>
 </html>

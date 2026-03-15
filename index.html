@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CVFlow — Créez votre CV professionnel</title>
+    <title>ProCV — Créez votre CV professionnel</title>
     <link rel="icon" type="image/png" href="assets/images/PCV.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
@@ -12,67 +12,65 @@
 </head>
 <body>
 
-    <!-- NAV -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-inner">
-            <a href="index.html" class="nav-logo">
+    <nav class="navigation" id="navigation">
+        <div class="contenu-nav">
+            <a href="index.html" class="logo">
                 <img src="assets/images/PCV.png" alt="logo">
-                <span>CVFlow</span>
+                <span>ProCV</span>
             </a>
-            <div class="nav-links">
-                <a href="#accueil" class="nav-link active">Accueil</a>
-                <a href="#templates" class="nav-link">Templates</a>
-                <a href="assets/about.html" class="nav-link">À propos</a>
-                <a href="assets/templates/template3.html" class="nav-cta">Créer mon CV</a>
+            <div class="liens-menu">
+                <a href="#accueil" class="lien actif">Accueil</a>
+                <a href="#modeles" class="lien">Templates</a>
+                <a href="assets/about.html" class="lien">À propos</a>
+                <a href="templates.html" class="bouton-nav">Créer mon CV</a>
             </div>
-            <button class="burger" id="burger">
+            <button class="menu-burger" id="menu-burger">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero" id="accueil">
-        <div class="hero-bg">
-            <div class="hero-shape hero-shape-1"></div>
-            <div class="hero-shape hero-shape-2"></div>
+    <section class="banniere" id="accueil">
+        <div class="fond-banniere">
+            <div class="cercle cercle-1"></div>
+            <div class="cercle cercle-2"></div>
         </div>
-        <div class="hero-inner">
-            <div class="hero-text">
-                <div class="hero-badge">
+        <div class="contenu-banniere">
+            <div class="texte-banniere">
+                <div class="pastille">
                     <i class="fa-solid fa-bolt"></i>
                     Simple · Rapide · Gratuit
                 </div>
                 <h1>Créez un CV<br><em>professionnel</em><br>en quelques minutes</h1>
                 <p>Notre plateforme intuitive vous permet de construire un CV qui se démarque auprès des recruteurs, sans effort.</p>
-                <div class="hero-actions">
-                    <a href="assets/templates/template3.html" class="btn-primary">
+                <div class="groupe-boutons">
+                    <a href="assets/templates/template1.html" class="bouton-commencer">
                         <i class="fa-solid fa-wand-magic-sparkles"></i>
                         Commencer maintenant
                     </a>
-                    <a href="#templates" class="btn-outline">Voir les modèles</a>
+                    <a href="templates/template1.html" class="bouton-contour">Voir les modèles</a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
+                <div class="chiffres-cles">
+                    <div class="chiffre">
                         <strong>7+</strong>
                         <span>Templates</span>
                     </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
+                    <div class="trait-separation"></div>
+                    <div class="chiffre">
                         <strong>100%</strong>
                         <span>Gratuit</span>
                     </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
+                    <div class="trait-separation"></div>
+                    <div class="chiffre">
                         <strong>PDF</strong>
                         <span>Export direct</span>
                     </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="hero-card">
-                    <img src="assets/images/photo1.jpeg" alt="CV Preview" class="hero-img">
-                    <div class="hero-card-badge">
+            <div class="visuel-banniere">
+                <div class="carte-cv">
+                    <img src="assets/images/photo1.jpeg" alt="Aperçu CV" class="image-cv">
+                    <div class="badge-cv">
                         <i class="fa-solid fa-check"></i>
                         CV prêt à l'emploi
                     </div>
@@ -81,32 +79,31 @@
         </div>
     </section>
 
-    <!-- ETAPES -->
-    <section class="steps" id="etapes">
-        <div class="section-header">
-            <p class="section-label">Comment ça marche</p>
+    <section class="etapes" id="etapes">
+        <div class="entete-section">
+            <p class="sous-titre">Comment ça marche</p>
             <h2>Créez votre CV en <em>3 étapes</em></h2>
         </div>
-        <div class="steps-grid">
-            <div class="step-card" style="--delay: 0s">
-                <div class="step-number">01</div>
-                <div class="step-icon">
+        <div class="grille-etapes">
+            <div class="carte-etape" style="--delai: 0s">
+                <div class="numero-etape">01</div>
+                <div class="icone-etape">
                     <i class="fa-solid fa-palette"></i>
                 </div>
                 <h3>Choisissez un modèle</h3>
                 <p>Sélectionnez parmi nos templates professionnels celui qui correspond à votre style et à votre secteur.</p>
             </div>
-            <div class="step-card" style="--delay: 0.1s">
-                <div class="step-number">02</div>
-                <div class="step-icon">
+            <div class="carte-etape" style="--delai: 0.1s">
+                <div class="numero-etape">02</div>
+                <div class="icone-etape">
                     <i class="fa-solid fa-pen-to-square"></i>
                 </div>
                 <h3>Remplissez vos infos</h3>
                 <p>Ajoutez vos informations via un formulaire simple. Votre CV se met à jour en temps réel à chaque frappe.</p>
             </div>
-            <div class="step-card" style="--delay: 0.2s">
-                <div class="step-number">03</div>
-                <div class="step-icon">
+            <div class="carte-etape" style="--delai: 0.2s">
+                <div class="numero-etape">03</div>
+                <div class="icone-etape">
                     <i class="fa-solid fa-file-arrow-down"></i>
                 </div>
                 <h3>Téléchargez en PDF</h3>
@@ -115,74 +112,72 @@
         </div>
     </section>
 
-    <!-- TEMPLATES -->
-    <section class="templates-section" id="templates">
-        <div class="section-header">
-            <p class="section-label">Nos modèles</p>
+    <section class="section-modeles" id="modeles">
+        <div class="entete-section">
+            <p class="sous-titre">Nos modèles</p>
             <h2>Choisissez votre <em>template</em></h2>
-            <p class="section-sub">Des designs professionnels adaptés à tous les secteurs</p>
+            <p class="description-section">Des designs professionnels adaptés à tous les secteurs</p>
         </div>
-        <div class="templates-grid">
-            <div class="template-card">
-                <div class="template-img-wrap">
-                    <img src="assets/images/photo6.jpeg" alt="Template 1">
-                    <div class="template-overlay">
-                        <a href="assets/templates/template1.html" class="btn-use">Utiliser ce modèle</a>
+        <div class="grille-modeles">
+            <div class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/Templates6.png" alt="Template 1">
+                    <div class="survol-modele">
+                        <a href="templates/template6.html" class="bouton-utiliser">Utiliser ce modèle</a>
                     </div>
                 </div>
-                <div class="template-info">
-                    <span class="template-name">Classic</span>
-                    <span class="template-tag">Professionnel</span>
+                <div class="infos-modele">
+                    <span class="nom-modele">Classic</span>
+                    <span class="tag-modele">Professionnel</span>
                 </div>
             </div>
-            <div class="template-card">
-                <div class="template-img-wrap">
-                    <img src="assets/images/photo4.jpeg" alt="Template 2">
-                    <div class="template-overlay">
-                        <a href="assets/templates/template2.html" class="btn-use">Utiliser ce modèle</a>
+            <div class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/Templates7.png" alt="Template 2">
+                    <div class="survol-modele">
+                        <a href="templates/template7.html" class="bouton-utiliser">Utiliser ce modèle</a>
                     </div>
                 </div>
-                <div class="template-info">
-                    <span class="template-name">Modern</span>
-                    <span class="template-tag">Créatif</span>
+                <div class="infos-modele">
+                    <span class="nom-modele">Modern</span>
+                    <span class="tag-modele">Créatif</span>
                 </div>
             </div>
-            <div class="template-card">
-                <div class="template-img-wrap">
-                    <img src="assets/images/photo6.jpeg" alt="Template 3">
-                    <div class="template-overlay">
-                        <a href="assets/templates/template3.html" class="btn-use">Utiliser ce modèle</a>
+            <div class="carte-modele">
+                <div class="apercu-modele">
+                    <img src="assets/images/Templates5.png" alt="Template 3">
+                    <div class="survol-modele">
+                        <a href="templates/template5.html" class="bouton-utiliser">Utiliser ce modèle</a>
                     </div>
                 </div>
-                <div class="template-info">
-                    <span class="template-name">Executive</span>
-                    <span class="template-tag">Corporate</span>
+                <div class="infos-modele">
+                    <span class="nom-modele">Executive</span>
+                    <span class="tag-modele">Corporate</span>
                 </div>
             </div>
         </div>
-        <div class="templates-cta">
-            <a href="templates.html" class="btn-outline">
+        <div class="voir-plus">
+            <a href="templates.html" class="bouton-contour">
                 Voir tous les templates
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-brand">
-                <img src="assets/images/PCV.png" alt="logo" class="footer-logo">
-                <span class="footer-name">CVFlow</span>
+    <footer class="pied-page">
+        <div class="contenu-pied">
+            <div class="marque">
+                <img src="assets/images/PCV.png" alt="logo" class="logo-pied">
+                <span class="nom-marque">ProCV</span>
                 <p>Créez votre CV professionnel gratuitement en quelques minutes.</p>
             </div>
-            <div class="footer-col">
+            <div class="colonne-pied">
                 <h4>Navigation</h4>
                 <a href="#accueil">Accueil</a>
-                <a href="#templates">Templates</a>
+                <a href="#modeles">Templates</a>
                 <a href="assets/about.html">À propos</a>
             </div>
-            <div class="footer-col">
+            <div class="colonne-pied">
                 <h4>Contact</h4>
                 <a href="mailto:ndiayemamediarra3170@gmail.com">
                     <i class="fa-regular fa-envelope"></i>
@@ -195,31 +190,31 @@
                 <p><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 CVFlow. Tous droits réservés.</p>
+        <div class="bas-pied">
+            <p>© 2026 ProCV. Tous droits réservés.</p>
         </div>
     </footer>
 
     <script src="assets/script/script2.js"></script>
     <script>
-        const burger = document.getElementById('burger');
-        const navLinks = document.querySelector('.nav-links');
+        const burger = document.getElementById('menu-burger');
+        const menu = document.querySelector('.liens-menu');
+
         burger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-            burger.classList.toggle('active');
+            menu.classList.toggle('ouvert');
+            burger.classList.toggle('actif');
         });
 
         window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
+            document.getElementById('navigation').classList.toggle('defilé', window.scrollY > 50);
         });
 
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', e => {
-                const target = document.querySelector(a.getAttribute('href'));
-                if (target) {
+                const cible = document.querySelector(a.getAttribute('href'));
+                if (cible) {
                     e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth' });
+                    cible.scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });

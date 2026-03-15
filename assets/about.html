@@ -1,50 +1,156 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>ProCV — À propos</title>
     <link rel="icon" type="image/png" href="images/PCV.png">
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style/about.css">
- <body>
-     <!--Section menu-->
-    <div class="container-menu" id="acceuil">
-    <div class="first-menu">
-    <!--Logo-->
-    <div class="logo">
-    <a href="index.html"><img src="images/PCV.png" alt=""></a>
-    </div>
-    <!--Menu-->
-        <div class="menu-links">
-        <ul>
-        <li>
-            <a href="../index.html" id="accueil">Accueil</a>
-        </li>
-        <li>
-            <a href="../templates.html" id="templates">Templates</a>
-        </li>
+</head>
+<body>
 
-        <li>
-            <a href="#" id="about">About</a>
-        </li>
-
-        </ul>
-
+    <nav class="navigation" id="navigation">
+        <div class="contenu-nav">
+            <a href="../index.html" class="logo">
+                <img src="images/PCV.png" alt="ProCV">
+                <span>ProCV</span>
+            </a>
+            <div class="liens-menu">
+                <a href="../index.html" class="lien">Accueil</a>
+                <a href="../templates.html" class="lien">Templates</a>
+                <a href="#" class="lien actif">À propos</a>
+                <a href="../assets/templates/template1.html" class="bouton-nav">Créer mon CV</a>
+            </div>
         </div>
-    </div>
-  </div>
-    <!--Section A propos-->
-    <div class="about">
-        <h2> A propos</h2>
-        <p class="text">Rédiger un CV ne devrait pas être une source de frustration. Pourtant, beaucoup continuent d’utiliser Word ou Google Docs et passent des heures à se battre avec la mise en page, les marges qui bougent toutes seules et les designs qui ne rendent jamais vraiment bien.
-                C’est précisément pour changer cette réalité que nous avons imaginé ProCV.
-                Notre idée était simple : offrir un outil en ligne gratuit, rapide et agréable à utiliser, qui enlève toute la complexité technique pour laisser place à l’essentiel.
-                Avec ProCV, vous n’avez plus besoin de vous soucier de la structure ou du design : vous vous concentrez uniquement sur votre contenu, vos expériences et vos compétences. Nous nous occupons du reste .
-                Notre objectif est clair : rendre la création de CV intuitive, moderne et même plaisante. Parce qu’un bon CV ne devrait pas être un casse-tête, mais un tremplin vers vos opportunités.
-        </p>
+    </nav>
 
-    </div>
- </body>
- </html>
+    <section class="en-tete">
+        <div class="fond-en-tete">
+            <div class="cercle cercle-1"></div>
+            <div class="cercle cercle-2"></div>
+        </div>
+        <div class="contenu-en-tete">
+            <div class="pastille">
+                <i class="fa-solid fa-heart"></i>
+                Notre histoire
+            </div>
+            <h1>À propos de <em>ProCV</em></h1>
+            <p>Un outil pensé pour simplifier la création de CV et vous aider à décrocher vos opportunités.</p>
+        </div>
+    </section>
+
+    <section class="section-apropos">
+        <div class="contenu-apropos">
+            <div class="bloc-texte">
+                <p class="sous-titre-section">Notre mission</p>
+                <h2>Rédiger un CV ne devrait pas être <em>une source de frustration</em></h2>
+                <p>Pourtant, beaucoup continuent d'utiliser Word ou Google Docs et passent des heures à se battre avec la mise en page, les marges qui bougent toutes seules et les designs qui ne rendent jamais vraiment bien.</p>
+                <p>C'est précisément pour changer cette réalité que nous avons imaginé <strong>ProCV</strong>. Notre idée était simple : offrir un outil en ligne gratuit, rapide et agréable à utiliser, qui enlève toute la complexité technique pour laisser place à l'essentiel.</p>
+                <p>Avec ProCV, vous n'avez plus besoin de vous soucier de la structure ou du design — vous vous concentrez uniquement sur votre contenu, vos expériences et vos compétences. <strong>Nous nous occupons du reste.</strong></p>
+                <p>Notre objectif est clair : rendre la création de CV intuitive, moderne et même plaisante. Parce qu'un bon CV ne devrait pas être un casse-tête, mais un tremplin vers vos opportunités.</p>
+                <a href="../../templates/template1.html" class="bouton-commencer">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    Créer mon CV maintenant
+                </a>
+            </div>
+            <div class="bloc-visuel">
+                <div class="carte-valeur">
+                    <div class="icone-valeur">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>Rapide</h3>
+                    <p>Créez votre CV en quelques minutes grâce à notre éditeur en temps réel.</p>
+                </div>
+                <div class="carte-valeur">
+                    <div class="icone-valeur">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Gratuit</h3>
+                    <p>100% gratuit, sans inscription obligatoire, sans frais cachés.</p>
+                </div>
+                <div class="carte-valeur">
+                    <div class="icone-valeur">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>Élégant</h3>
+                    <p>7 templates professionnels pour tous les profils et secteurs.</p>
+                </div>
+                <div class="carte-valeur">
+                    <div class="icone-valeur">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </div>
+                    <h3>Export PDF</h3>
+                    <p>Téléchargez votre CV en PDF haute qualité en un seul clic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-equipe">
+        <div class="entete-section">
+            <p class="sous-titre">L'équipe</p>
+            <h2>Ceux qui ont créé <em>ProCV</em></h2>
+        </div>
+        <div class="grille-equipe">
+            <div class="carte-membre">
+                <div class="avatar-membre">MD</div>
+                <h3>Mame Diarra Ndiaye</h3>
+                <span class="role-membre"><strong>BIG2A-221707</strong></span>
+                <a href="mailto:ndiayemamediarra3170@gmail.com" class="email-membre">
+                    <i class="fa-regular fa-envelope"></i>
+                    ndiayemamediarra3170@gmail.com
+                </a>
+            </div>
+            <div class="carte-membre">
+                <div class="avatar-membre">CS</div>
+                <h3>Cheikh Saliou Niang</h3>
+                <span class="role-membre"><strong>BIG2A-221633</strong></span>
+                <a href="mailto:cheikhsaliouniang01@gmail.com" class="email-membre">
+                    <i class="fa-regular fa-envelope"></i>
+                    cheikhsaliouniang01@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pied-page">
+        <div class="contenu-pied">
+            <div class="marque">
+                <img src="images/PCV.png" alt="ProCV" class="logo-pied">
+                <span class="nom-marque">ProCV</span>
+                <p>Créez votre CV professionnel gratuitement en quelques minutes.</p>
+            </div>
+            <div class="colonne-pied">
+                <h4>Navigation</h4>
+                <a href="../index.html">Accueil</a>
+                <a href="../templates.html">Templates</a>
+                <a href="#">À propos</a>
+            </div>
+            <div class="colonne-pied">
+                <h4>Contact</h4>
+                <a href="mailto:ndiayemamediarra3170@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    ndiayemamediarra3170@gmail.com
+                </a>
+                <a href="mailto:cheikhsaliouniang01@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    cheikhsaliouniang01@gmail.com
+                </a>
+                <p><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</p>
+            </div>
+        </div>
+        <div class="bas-pied">
+            <p>© 2026 ProCV. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.getElementById('navigation').classList.toggle('defilé', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
