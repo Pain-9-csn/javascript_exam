@@ -1,119 +1,228 @@
-
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>CVFlow — Créez votre CV professionnel</title>
     <link rel="icon" type="image/png" href="assets/images/PCV.png">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style/style2.css">
- </head>
+</head>
 <body>
-    <!--Section menu-->
-    <div class="container-menu" id="acceuil">
-    <div class="first-menu">
-    <!--Logo-->
-    <div class="logo">
-    <a href="index.html"><img src="assets/images/PCV.png" alt="logo"></a>
-    </div>
-    <!--Menu-->
-    <div class="menu-links">
-    <ul>
-        <li>
-            <a href="#" id="accueil">Accueil</a>
-        </li>
-        <li>
-            <a href="templates.html" id="templates">Templates</a>
-        </li>
 
-        <li>
-            <a href="assets/about.html" id="about">About</a>
-        </li>
-    </ul>
-
-    </div>
-    </div>
-    <div class="banner" id="accueil">
-        <div class="div1"> 
-        <h1>Créer un cv professionnel en quelques minutes </h1>
-         <p class="text">Bienvenue sur notre créateur de CV ! Grâce à notre plateforme facile à utiliser, vous pouvez créer un CV professionnel qui se démarque auprès des employeurs en seulement quelques minutes. </p>
-         <button class="btn1"> Commencer maintenant</button>
-         <button class="btn3">En savoir plus</button>
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/PCV.png" alt="logo">
+                <span>CVFlow</span>
+            </a>
+            <div class="nav-links">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#templates" class="nav-link">Templates</a>
+                <a href="assets/about.html" class="nav-link">À propos</a>
+                <a href="assets/templates/template3.html" class="nav-cta">Créer mon CV</a>
+            </div>
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-     <div class="div2"> 
-        <img class="img" src="assets/images/photo1.jpeg" alt="">
-    </div>
-    </div>
-    </div>
-    <!--Section Informations -->
-    <div class="container-informations" >
-    <div class="titre-section"> 
-    <h3>Créer votre CV en juste 3 étapes</h3>
-    <span></span>
-    </div> 
+    </nav>
 
-    <div class="information">
-    <div class="info1"> 
-     <div class="icon">1</div>
-    <h6>Choisissez votre modèle</h6><br>
-    <p>Choisissez le modèle qui correspond à vos goûts parmi les meilleurs modèles de CV prêts à l’emploi.</p>
-    </div>
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-bolt"></i>
+                    Simple · Rapide · Gratuit
+                </div>
+                <h1>Créez un CV<br><em>professionnel</em><br>en quelques minutes</h1>
+                <p>Notre plateforme intuitive vous permet de construire un CV qui se démarque auprès des recruteurs, sans effort.</p>
+                <div class="hero-actions">
+                    <a href="assets/templates/template3.html" class="btn-primary">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        Commencer maintenant
+                    </a>
+                    <a href="#templates" class="btn-outline">Voir les modèles</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>7+</strong>
+                        <span>Templates</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Gratuit</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong>PDF</strong>
+                        <span>Export direct</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <img src="assets/images/photo1.jpeg" alt="CV Preview" class="hero-img">
+                    <div class="hero-card-badge">
+                        <i class="fa-solid fa-check"></i>
+                        CV prêt à l'emploi
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="info2"> 
-     <div class="icon">2</div>
-    <h6>Ajoutez vos informations</h6><br>
-    <p>Ajoutez les informations nécessaires pour créer votre CV en remplissant un formulaire simple et facile.</p>
-    </div>
+    <!-- ETAPES -->
+    <section class="steps" id="etapes">
+        <div class="section-header">
+            <p class="section-label">Comment ça marche</p>
+            <h2>Créez votre CV en <em>3 étapes</em></h2>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card" style="--delay: 0s">
+                <div class="step-number">01</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3>Choisissez un modèle</h3>
+                <p>Sélectionnez parmi nos templates professionnels celui qui correspond à votre style et à votre secteur.</p>
+            </div>
+            <div class="step-card" style="--delay: 0.1s">
+                <div class="step-number">02</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <h3>Remplissez vos infos</h3>
+                <p>Ajoutez vos informations via un formulaire simple. Votre CV se met à jour en temps réel à chaque frappe.</p>
+            </div>
+            <div class="step-card" style="--delay: 0.2s">
+                <div class="step-number">03</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                </div>
+                <h3>Téléchargez en PDF</h3>
+                <p>Exportez votre CV au format PDF en un clic, prêt à être envoyé aux recruteurs.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="info3">
-     <div class="icon">3</div> 
-    <h6>Téléchargez-le gratuitement</h6><br>
-    <p>Téléchargez gratuitement votre CV au format PDF.</p>
-    </div>
-    </div>
-    </div>
-    <!--Section Templates-->
-    <section class="templates" >
-    <div class="titre-section">
-    <h3>Choisissez votre modèle</h3>
-    <p>Parmi les meilleurs modèles de CV prêts à l’emploi</p>
-    </div>
+    <!-- TEMPLATES -->
+    <section class="templates-section" id="templates">
+        <div class="section-header">
+            <p class="section-label">Nos modèles</p>
+            <h2>Choisissez votre <em>template</em></h2>
+            <p class="section-sub">Des designs professionnels adaptés à tous les secteurs</p>
+        </div>
         <div class="templates-grid">
-        <div class="template-card">
-        <img src="assets/images/photo6.jpeg" alt="Modèle CV 1">
+            <div class="template-card">
+                <div class="template-img-wrap">
+                    <img src="assets/images/photo6.jpeg" alt="Template 1">
+                    <div class="template-overlay">
+                        <a href="assets/templates/template1.html" class="btn-use">Utiliser ce modèle</a>
+                    </div>
+                </div>
+                <div class="template-info">
+                    <span class="template-name">Classic</span>
+                    <span class="template-tag">Professionnel</span>
+                </div>
+            </div>
+            <div class="template-card">
+                <div class="template-img-wrap">
+                    <img src="assets/images/photo4.jpeg" alt="Template 2">
+                    <div class="template-overlay">
+                        <a href="assets/templates/template2.html" class="btn-use">Utiliser ce modèle</a>
+                    </div>
+                </div>
+                <div class="template-info">
+                    <span class="template-name">Modern</span>
+                    <span class="template-tag">Créatif</span>
+                </div>
+            </div>
+            <div class="template-card">
+                <div class="template-img-wrap">
+                    <img src="assets/images/photo6.jpeg" alt="Template 3">
+                    <div class="template-overlay">
+                        <a href="assets/templates/template3.html" class="btn-use">Utiliser ce modèle</a>
+                    </div>
+                </div>
+                <div class="template-info">
+                    <span class="template-name">Executive</span>
+                    <span class="template-tag">Corporate</span>
+                </div>
+            </div>
         </div>
-        <div class="template-card">
-        <img src="assets/images/photo4.jpeg" alt="Modèle CV 2">
+        <div class="templates-cta">
+            <a href="templates.html" class="btn-outline">
+                Voir tous les templates
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
-        </section>
-   <button class="btn-template" >Voir tous les modèles</button>
+    </section>
 
-<!--Section Footer -->
-   <footer class="footer">
-  <div class="footer-container">
-    <!-- Partie gauche  -->
-    <div class="footer-left">
-      <h3>Contact</h3>
-      <p>📧 ndiayemamediarra3170@gmail.com</p>
-      <p>📧 cheikhsaliouniang01@gmail.com</p>
-      <p>📍 Dakar, Sénégal</p>
-    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/images/PCV.png" alt="logo" class="footer-logo">
+                <span class="footer-name">CVFlow</span>
+                <p>Créez votre CV professionnel gratuitement en quelques minutes.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="#accueil">Accueil</a>
+                <a href="#templates">Templates</a>
+                <a href="assets/about.html">À propos</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:ndiayemamediarra3170@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    ndiayemamediarra3170@gmail.com
+                </a>
+                <a href="mailto:cheikhsaliouniang01@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    cheikhsaliouniang01@gmail.com
+                </a>
+                <p><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 CVFlow. Tous droits réservés.</p>
+        </div>
+    </footer>
 
-    <!-- Partie centrale -->
-    <div class="footer-center">
-      <h3>Navigation</h3>
-      <a href="#">Accueil</a>
-      <a href="assets/templates/templates.html">Templates</a>
-      <a href="assets/about.html">About</a>
-    </div>
+    <script src="assets/script/script2.js"></script>
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            burger.classList.toggle('active');
+        });
 
-    <!-- Partie droite  -->
-    <div class="footer-right">
-      <p>© 2026 CVPro. Tous droits réservés.</p>
-    </div>
-  </div>
-</footer>
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
-<script src="assets/script/script2.js"></script>
 </html>
