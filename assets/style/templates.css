@@ -1,0 +1,120 @@
+body{
+    background-color: var(--main-color);
+}
+
+:root{
+
+  /** Couleurs principales  **/
+    --main-color: #F8F9FA;
+    --second-color:#003366;
+    --third-color:#2C2C2C;
+    --fourth-color:#A7C7E7;
+   --fith-color:  #414833 ;
+    --sixth-color:#84a98c;
+}
+
+/* **** BASE CONTENT **** */
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: verdana;
+    text-decoration: none !important;
+}
+
+
+/*** Menu ***/
+.first-menu {
+   background-color: var(--second-color);
+   height: 12vh;
+   width: 100%;
+   display: flex;
+   justify-content: end;
+   position: fixed;
+   top: 0;             
+   box-shadow: rgba(0,0,0,0.4) 3px 3px 4px;
+   z-index: 10000;
+}
+
+
+.first-menu .logo img {
+    max-width: 100px;
+    max-height: 70px;
+    position: absolute;
+    left: 5vh;
+    top: 1.5vh;
+}
+
+.menu-links ul {
+    display: flex;
+    position: absolute;
+    right: 6vh;
+    top: 4.1vh;
+}
+
+.menu-links ul a {
+    margin-left: 5vh;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.active, .menu-links li a:hover {
+    color:var(--sixth-color) !important;
+}
+
+/**Banniere**/
+.banner {
+    margin-top: 12%;
+    height: 100vh; 
+   background: var(--main-color);
+    margin-right: 50%;
+
+}
+
+.banniere {
+    text-align: justify;
+    background: var(--main-color);
+     margin-top: 10vh;
+     margin-left: 2vh;
+}
+h3{
+  font-family: 'Poppins', sans-serif;
+  color:var(--fith-color);
+  font-size: 60px;   
+  font-weight: 800;
+
+}
+
+.templates{
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+    max-width: 1000px;
+    align-items:  stretch;; 
+    margin-top: -35%;
+    
+}
+
+.template-card{
+     background: var(--main-color);
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgb(0,0,0,0.1);
+     padding: 10px;
+     height:500px;
+     justify-content: space-between;
+     
+}
+.template-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.template-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
